@@ -2,10 +2,11 @@ import time
 timeLine = []
 a = 3
 while a >= 0:
+   
     cislo = int(input("Zadejte číslo:"))
     
     def timer(cislo):
-        while cislo:
+        while (cislo):
             time.sleep(1)
             cislo = cislo - 1
             print(cislo)
@@ -24,13 +25,13 @@ index = 0
 
 while index<len(timeLine):
     test = timeLine[index]
-    print(test)
+    
     while test>0:
-        time.sleep(1)
-        test = timeLine[index] - 1
-        print (test)
-   
-        
-
+            time.sleep(1)
+            test = test - 1
+            print (test)
+            if test == 0:
+                index = index + 1
+                print("Další číslo")
         
         
